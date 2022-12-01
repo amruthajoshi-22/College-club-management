@@ -1,0 +1,31 @@
+.form{
+    border:2px solid black;
+    max-width:50%;
+    height: 40%;
+    margin: auto;
+    background-color:#ad2b56;
+    text-align: center;
+    padding: 8px;
+    
+}
+ input,textarea{
+    text-align:left;
+    width: 75%;
+    padding: 8px;
+    display:inline-block;
+    margin: 1rem;
+    border-radius: 8px;
+    outline: none;
+
+}
+
+
+
+button{
+    display: in;
+    margin: auto;
+    display: block;
+    text-align: center;
+    
+
+}

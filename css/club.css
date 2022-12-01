@@ -1,0 +1,46 @@
+body{
+    background-image: url(../images/background.png);
+}
+ 
+#navbarNav{
+    margin-left: 25vw;
+}
+
+.navbar-brand{
+    margin-left: 7vw;
+    font-size: 5em;
+    /* height: 1.2em;
+    width: 8rem;  */
+    
+}
+.navbar{
+    /* background-color: rgb(6, 46, 15); */
+    padding:1.5em 0 1em 0;
+    
+}
+
+.nav-item{
+    margin:0 1em 0 1em;
+    font-size: 20px;
+}
+
+.club-contain{
+    margin-left:10vw;
+    margin-top: 6vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 6em;
+}
+.club{
+    height:38vh;
+    width:25vw;
+}
+/* .club img:hover{
+     height:38vh; 
+    width:25vw 
+} */
+.club img{
+    height:38vh;
+    width:25vw;
+    border-radius: 10px;
+}
