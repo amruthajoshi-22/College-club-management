@@ -1,0 +1,53 @@
+body{
+    background-image:linear-gradient(to right,rgb(30 55 34),rgb(84 166 119));
+    color: aliceblue;
+}
+
+.clubcore{
+    background-color: aliceblue;
+    color: black;
+    font-size:22px ;
+    width:70rem;
+    margin: auto;
+}
+.about{
+    margin:5rem 0 5rem 0;
+    display: flex;
+    justify-content:center;
+}
+
+
+.about_dept{
+    margin-left:15rem;
+}
+.eachcore{
+    
+    margin-top: 3rem;
+     width: 60rem; 
+     
+    
+    
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.eachpost{
+    /* margin-top:2rem; */
+    height: 6rem;
+    display:flex;
+    justify-content:space-around;
+    align-items:flex-start;
+}
+
+.post{
+    width:10rem;
+    height:3rem;
+    
+    /* border: 2px solid white; */
+}
+
+.name{
+    width:14rem;
+    height:7rem;
+    
+}
