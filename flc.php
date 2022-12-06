@@ -15,6 +15,33 @@ mysqli_select_db($con,"trefle");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/eachclub.css?v=<?php echo time(); ?>">
     <title>Ace</title>
+    <style>
+    .joincontainer{
+    height:30vh;
+    width:70%;
+    margin: auto;
+    display:flex;
+    justify-content: space-evenly;
+    margin-top:5em;
+    border-radius: 15px;
+    background-color: cornflowerblue;
+    padding-top: 7em;
+    margin-top: 5em;
+}
+
+.joinnow{
+
+    width:14em;
+    color: black;
+    font-size:45px;
+}
+
+.joinbutton{
+    width:10em;
+    height:4em;
+    border-radius: 10px;
+}
+</style>
 </head>
 <body>
     <h1 style="text-align:center; font-size:50px; ">
@@ -63,5 +90,16 @@ mysqli_select_db($con,"trefle");
          ?>
         </div>
         </div>
+
+        <div class="joincontainer" style="background-image:linear-gradient(to right,rgb(30 55 34),rgb(84 166 119));">
+        <div class=joinnow>Want to be a part of this Club and improve your coding skills</div>
+
+        <button class="joinbutton" onclick="template()">Join Now</button>
+    </div>
+    <script>
+        function template(){
+        window.location.href ="registration.html";
+        }
+    </script>
 </body>
 </html>

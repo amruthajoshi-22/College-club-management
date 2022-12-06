@@ -52,7 +52,7 @@ mysqli_select_db($con,"trefle");
             </div>
             <div class="name">
             <?php 
-              echo $row['stu_name']." ".$row['Sub1_name']." ".$row['Sub2_name']." ".$row['Sub3_name']
+              echo $row['stu_name']." ,".$row['Sub1_name']." ".$row['Sub2_name']." ".$row['Sub3_name']
             ?>
             </div>
            

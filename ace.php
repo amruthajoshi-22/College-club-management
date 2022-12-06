@@ -34,7 +34,7 @@ mysqli_select_db($con,"trefle");
       <h1 style="margin:1rem 0 1rem 0; text-align:center">Club Core Committee</h1>
         
         <?php 
-        $query="SELECT post_name,stu_name,Sub1_name,Sub2_name,Sub3_name  FROM club_core WHERE club_id='ace_01' ";
+        $query="SELECT post_name,stu_name,Sub1_name,Sub2_name,Sub3_name  FROM club_core WHERE club_id='ace_01' ORDER BY s.no";
         $result = mysqli_query($con,$query);
         $total=mysqli_num_rows($result);
         
@@ -47,13 +47,23 @@ mysqli_select_db($con,"trefle");
         ?> 
             <div class="eachpost">
             <div class="post">
+              <span style="font-weight:bolder">
             <?php 
               echo $row['post_name'].":"
             ?>
+            </span>
             </div>
             <div class="name">
+            <span style="font-weight:bold">
             <?php 
-              echo $row['stu_name']." ".$row['Sub1_name']." ".$row['Sub2_name']." ".$row['Sub3_name']
+               echo $row['stu_name'];
+               ?>
+              </span>
+               <?php
+              echo "<br>";
+              echo $row['Sub1_name'];
+              echo "<br>";
+              echo $row['Sub2_name'];
             ?>
             </div>
            
