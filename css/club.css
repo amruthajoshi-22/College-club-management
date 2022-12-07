@@ -25,22 +25,25 @@ body{
 }
 
 .club-contain{
-    margin-left:10vw;
-    margin-top: 6vh;
+    width: fit-content;
+    margin-top: 10vh;
     display: grid;
-    grid-template-columns: auto auto;
-    row-gap: 6em;
+    grid-template-columns: auto auto auto;
+    column-gap: 10vw;
+    row-gap: 2em;
 }
 .club{
-    height:38vh;
-    width:25vw;
+    height:20rem;
+    width:20rem;
+    margin-right:0;
 }
 /* .club img:hover{
      height:38vh; 
     width:25vw 
 } */
-.club img{
-    height:38vh;
-    width:25vw;
-    border-radius: 10px;
+
+.clubimg{
+    height:20rem;
+    width:20rem;
+    border-radius: 50%;
 }
