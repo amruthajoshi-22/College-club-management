@@ -1,10 +1,12 @@
 body{
-    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/001/342/886/small/geometric-gradient-dark-blue-background-free-vector.jpg");
+    background-color: rgb(243, 240, 240);
     background-repeat: no-repeat;
     background-position:top;
     background-size: cover;
 }
-
+.heading{
+    background-color: rgb(200, 223, 231);
+}
 .row{
     display:flex;
     justify-content:center;
@@ -27,13 +29,13 @@ body{
 .post-name{
     width: 6em;
     font-size: 25px;
-    color: aliceblue;
+    color: rgb(121, 160, 193);
     margin: auto;
 }
 
 .about-club{
     width:70%;
-    color:aliceblue;
+    color:rgb(112, 142, 169);
     font-size: 25px;
     margin: auto;
 
@@ -41,13 +43,13 @@ body{
 
 .joincontainer{
     height:30vh;
-    width:70%;
+    width:80%;
     margin: auto;
     display:flex;
     justify-content: space-evenly;
     margin-top:5em;
     border-radius: 15px;
-    background-color: cornflowerblue;
+    background-color: rgb(141, 158, 192);
     padding-top: 7em;
     margin-top: 5em;
 }
