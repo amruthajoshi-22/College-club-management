@@ -1,0 +1,58 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reg.css">
+</head>
+<body>
+    <div class="container">
+        <form class="form" id="login"  action="reg.php" method="POST">
+            
+        <!-- <form class="form form--hidden" id="createAccount"> -->
+            <h1 class="form__title">Create Account</h1>
+            <div class="form__message form__message--error"></div>
+            <div class="form__input-group">
+                <input type="text" name="cname" id="usn" class="form__input" autofocus placeholder="ClubName" required>
+                
+            </div>
+            <div class="form__input-group">
+                <input type="text" name="uname" id="usn" class="form__input" autofocus placeholder="Name" required>
+                
+            </div>
+            <div class="form__input-group">
+                <input type="text" name="usn" class="form__input" id="usn" autofocus placeholder="USN" required>
+                
+            </div>
+            <div class="form__input-group">
+                <input type="int" name="branch" class="form__input" id="branch" autofocus placeholder="Branch" required>
+                
+            </div>
+            <div class="form__input-group">
+                <input type="int" name="sem" class="form__input" id="sem" autofocus placeholder="Sem" required>
+                
+            </div>
+            <div class="form__input-group">
+                <input type="email" name="mail" class="form__input" id="mail" autofocus placeholder="Mail" required>
+                
+            </div>
+            <div class="form__input-group">
+                <input type="int" name="phone" class="form__input" id="phone" autofocus placeholder="Phone" required>
+                
+            </div>
+            <div class="form__input-group">
+                <input type="text" name="reason" class="form__input" id="reason" autofocus placeholder="Reason for joining club" required>
+                
+            </div>
+            <input type="submit" name="sumbmission" class="form__button">
+             
+        <!-- </form> -->
+        </form>
+    </div>
+</body>
+</html>

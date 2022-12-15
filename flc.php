@@ -44,6 +44,7 @@ mysqli_select_db($con,"trefle");
 </style>
 </head>
 <body>
+
     <h1 style="text-align:center; font-size:50px; ">
         Finite Loop club;
     </h1>
@@ -73,14 +74,23 @@ mysqli_select_db($con,"trefle");
         ?> 
             <div class="eachpost">
             <div class="post">
+            <span style="font-weight:bolder">
             <?php 
               echo $row['post_name'].":"
             ?>
             </div>
             <div class="name">
+            <span style="font-weight:bolder">
             <?php 
-              echo $row['stu_name']." ".$row['Sub1_name']." ".$row['Sub2_name']." ".$row['Sub3_name']
+              echo $row['stu_name'];
             ?>
+            </span>
+            <?php
+               echo "<br>";
+               echo $row['Sub1_name'];
+               echo "<br>";
+               echo $row['Sub2_name'];
+               ?>
             </div>
            
             </div>
@@ -91,15 +101,6 @@ mysqli_select_db($con,"trefle");
         </div>
         </div>
 
-        <div class="joincontainer" style="background-image:linear-gradient(to right,rgb(30 55 34),rgb(84 166 119));">
-        <div class=joinnow>Want to be a part of this Club and improve your coding skills</div>
-
-        <button class="joinbutton" onclick="template()">Join Now</button>
-    </div>
-    <script>
-        function template(){
-        window.location.href ="registration.html";
-        }
-    </script>
+        
 </body>
 </html>

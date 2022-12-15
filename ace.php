@@ -34,7 +34,7 @@ mysqli_select_db($con,"trefle");
       <h1 style="margin:1rem 0 1rem 0; text-align:center">Club Core Committee</h1>
         
         <?php 
-        $query="SELECT post_name,stu_name,Sub1_name,Sub2_name,Sub3_name  FROM club_core WHERE club_id='ace_01' ORDER BY s.no";
+        $query="SELECT post_name,stu_name,Sub1_name,Sub2_name,Sub3_name  FROM club_core WHERE club_id='ace_01' ORDER BY S_no";
         $result = mysqli_query($con,$query);
         $total=mysqli_num_rows($result);
         
