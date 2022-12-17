@@ -13,10 +13,14 @@ mysqli_select_db($con,"trefle");
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/eachclub.css?v=<?php echo time(); ?>">
     <title>Ace</title>
 </head>
 <body>
+
+     <button type="button" class="btn btn-light back" onclick="back()">Back</button>
     <h1 style="text-align:center; font-size:50px; ">
         Computer Society Of India
     </h1>
@@ -46,14 +50,24 @@ mysqli_select_db($con,"trefle");
         ?> 
             <div class="eachpost">
             <div class="post">
+            <span style="font-weight:bolder">
             <?php 
               echo $row['post_name'].":"
             ?>
+            </span>
             </div>
             <div class="name">
+            <span style="font-weight:bolder">
             <?php 
-              echo $row['stu_name']." ,".$row['Sub1_name']." ".$row['Sub2_name']." ".$row['Sub3_name']
+              echo $row['stu_name'];
             ?>
+            </span>
+            <?php
+             echo "<br>";
+             echo $row['Sub1_name'];
+             echo "<br>";
+             echo $row['Sub2_name'];
+             ?>
             </div>
            
             </div>
@@ -63,5 +77,13 @@ mysqli_select_db($con,"trefle");
          ?>
         </div>
         </div>
+
+      <script>
+        function back()
+        {
+        window.location.href="clubs.html";
+        }
+
+        </script>
 </body>
 </html>
