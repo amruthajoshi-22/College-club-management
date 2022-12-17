@@ -62,7 +62,7 @@ mysqli_select_db($con,"trefle");
 <script>
       function formjoin()
       {
-        window.location.href ="reg1.html";
+        window.location.href ="regclub.html";
       }
     </script>
 </body>
