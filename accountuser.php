@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <?php
 require_once("config.php");
+
 if (!isset($_SESSION["login_sess"])) {
     header("location:login.php");
 }
 $email = $_SESSION["login_email"];
+echo "$email";
 $findresult = mysqli_query($trefle, "SELECT * from users where email='$email'");
 if ($res = mysqli_fetch_array($findresult)) {
-    $username = $res['username'];
-    $fname = $res['fname'];
-    $lname = $res['lname'];
+    $username = $res['USN'];
+    $fname = $res['Name'];
+    // $lname = $res['lname'];
     $email = $res['email'];
 }
 

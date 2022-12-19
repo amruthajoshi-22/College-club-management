@@ -14,6 +14,7 @@ if(isset($_POST['submit'])) {
     echo "Hello world";
     $usn = $_POST['usn'];  
     $pword = $_POST['pword']; 
+
       
         //to prevent from mysqli injection  
         // $mail = stripcslashes($mail); 
@@ -39,12 +40,12 @@ if(isset($_POST['submit'])) {
            <?php echo "login successfull;"?>
             </div>
             <?php
-			 $_SESSION['logged']=$mail;
+			 $_SESSION['logged']=$row['email'];
 			 $row=mysqli_fetch_array($result);
 			 $_SESSION['name']=$row[0];
-			 $_SESSION['usn']=$row[1];
-			 $_SESSION['mail']=$row[3];
-			 header('location:admin/index.html?'); 					
+			 $_SESSION['login_username']=$row[USN];
+			 $_SESSION['login_email']=$row[3];
+			 header('location:indexadmin.php?'); 					
 		}
 
         

@@ -12,37 +12,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=El+Messiri:wght@700&family=Xanh+Mono&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-          <img class="navbar-brand" src="images/logo.png"></img>
-          <span style="font-size:45px; color: aliceblue; font-weight: bold;font-family: 'Lucida Sans', sans-serif;">TREFLE</span>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="home.html">HOME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="clubs.html">CLUBS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="eventsadmin.php">EVENTS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="aboutus.html">ABOUT US</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="accountadmin.php">PFROFILE</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+    <?php
+    require('navadmin.html');
+    ?>
       <!-- <p class="upcoming">Upcoming events</p> -->
       <div id="carouselExampleIndicators1" class="carousel slide upcoming-event" data-bs-ride="true">
         <div class="carousel-indicators">

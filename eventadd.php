@@ -1,5 +1,5 @@
 <?php
-require('../database.php');
+require('database.php');
 if(isset($_POST['submission'])){
     if($_FILES["imageposter"]["error"]==4){
         echo 
@@ -11,7 +11,7 @@ if(isset($_POST['submission'])){
         $fileName=$_FILES["imageposter"]["name"];
         // $fileSize=$_FILES["image"]["size"];
         $tmpName=$_FILES["imageposter"]["tmp_name"];
-        $folder="images/".$fileName;
+        $folder="admin/images/".$fileName;
         move_uploaded_file($tmpName,$folder);
         // $validImageExtension=['jpg','jpeg','png'];
         // $imageExtension=explode('.',$fileName);
@@ -30,11 +30,21 @@ if(isset($_POST['submission'])){
            
             $query="INSERT INTO events VALUES('$clubname','$eventid','$eventname','$about','$date','$time','$venue','$organizer','$folder')";
             $res=mysqli_query($con,$query);
-            
-            if($res){
+            // $createtable='CREATE table .$eventid
+            // (
+            //     ename varchar(20),
+            //     USN varchar(20),
+            //     branch varchar(20),
+            //     sem int(5),
+            //     phone bigint(10),
+            //     primary key(usn)
+
+            // )';
+            $res2=mysqli_query($con);
+            if($res & $res2){
                 echo "<script>
                 alert('Event added Successfully');
-                
+                window.location.href='eventsadmin.php'
                 </script>";
                 
             }

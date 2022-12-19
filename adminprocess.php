@@ -16,7 +16,7 @@ if(isset($_POST['sublogin']))
             $_SESSION["login_sess"] = "1";
             $_SESSION["login_email"] = $row['email'];
             echo"hello world";
-            header("location:admin/index.html");
+            header("location:adminindex.html");
 
         }
         else

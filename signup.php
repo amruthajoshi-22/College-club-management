@@ -83,7 +83,7 @@
         if(mysqli_num_rows($res)>0)
         {
           $row = mysqli_fetch_assoc($res);
-          if($username==$row['username'])
+          if($username==$row['USN'])
           {
             $error[] = 'username already exists';
           }
