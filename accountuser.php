@@ -10,8 +10,8 @@ echo "$email";
 $findresult = mysqli_query($trefle, "SELECT * from users where email='$email'");
 if ($res = mysqli_fetch_array($findresult)) {
     $username = $res['USN'];
-    $fname = $res['Name'];
-    // $lname = $res['lname'];
+    $fname = $res['fname'];
+     $lname = $res['lname'];
     $email = $res['email'];
 }
 

@@ -40,8 +40,8 @@ if(isset($_POST['submission'])){
             //     primary key(usn)
 
             // )';
-            $res2=mysqli_query($con);
-            if($res & $res2){
+            // $res2=mysqli_query($con);
+            if($res){
                 echo "<script>
                 alert('Event added Successfully');
                 window.location.href='eventsadmin.php'

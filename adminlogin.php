@@ -40,10 +40,11 @@ if(isset($_POST['submit'])) {
            <?php echo "login successfull;"?>
             </div>
             <?php
-			 $_SESSION['logged']=$row['email'];
+			 
 			 $row=mysqli_fetch_array($result);
+             $_SESSION['logged']=$row['email'];
 			 $_SESSION['name']=$row[0];
-			 $_SESSION['login_username']=$row[USN];
+			 $_SESSION['login_username']=$row['USN'];
 			 $_SESSION['login_email']=$row[3];
 			 header('location:indexadmin.php?'); 					
 		}
