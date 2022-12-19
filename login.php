@@ -49,8 +49,10 @@
 
 
           </form>
+          
           <br>
           <p> Don't have an account ? <a href="signup.php">Sign up </a></p>
+          <p> Admin Login?<a href="adminlogin.php">Admin login</a></p>
         </div>
       </div>
       <div class="col-sm-4"></div>

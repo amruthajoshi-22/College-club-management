@@ -1,12 +1,12 @@
 <?php
-session_start();
 require_once("config.php");
 if(isset($_POST['sublogin']))
 {
-    $login = $_POST['login_var'];
+    $login = $_POST['usn'];
     $password = $_POST['password'];
-    $query = "select * from users where( email='$login')";
+    $query = "select * from admin where( USN='$login')";
     $res = mysqli_query($trefle, $query);
+    print_r($res);
     $numRows = mysqli_num_rows($res);
     if($numRows == 1)
     {
@@ -14,13 +14,14 @@ if(isset($_POST['sublogin']))
         if(password_verify($password,$row['password']))
         {
             $_SESSION["login_sess"] = "1";
-            $_SESSION["login_email"]=$row['email'];
-            $_SESSION["login_username"] = $row['USN'];
-            header("location:indexuser.php");
+            $_SESSION["login_email"] = $row['email'];
+            echo"hello world";
+            header("location:adminindex.html");
 
         }
         else
         {
+
             header("location:login.php?loginerror=" . $login);
 
         }

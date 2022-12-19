@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reg.css">
+    <style>
+        .reg{
+            width:40vw;
+        }
+        .regcont{
+            width:45vw;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container regcont">
+        <form class="form reg" id="login"  action="eventadd.php" method="POST" enctype="multipart/form-data">
+            
+        <!-- <form class="form form--hidden" id="createAccount"> -->
+            <h1 class="form__title">Event Redistration form</h1>
+            <div class="form__message form__message--error"></div>
+            <div class="form__input-group">
+                <label >Club Name</label>
+                <input type="text" name="cname" id="usn" class="form__input" autofocus placeholder="ClubName" required>
+                
+            </div>
+            
+            <div class="form__input-group">
+                <label>Event ID</label>
+                <input type="text" name="eid" class="form__input" id="eid" autofocus placeholder="Event ID" required>
+                
+            </div>
+            <div class="form__input-group">
+                <label>Event Name</label>
+                <input type="text" name="ename" class="form__input" id="eid" autofocus placeholder="Event Name" required>
+                
+            </div>
+            <div class="form__input-group">
+                <label>Date</label>
+                <input type="date" name="date" class="form__input" id="date" autofocus placeholder="Date" required>
+                
+            </div>
+            <div class="form__input-group">
+                <label>Time</label>
+                <input type="time" name="time" class="form__input" id="sem" autofocus placeholder="Time" required>
+                
+            </div>
+            <div class="form__input-group">
+                <label>Venue</label>
+                <input type="text" name="venue" class="form__input" id="venue" autofocus placeholder="Venue" required>
+                
+            </div>
+           
+            <div class="form__input-group">
+                <label>Organizers</label>
+                <input type="text" name="organizer" class="form__input" id="reason" autofocus placeholder="Organizers" required>
+                
+            </div>
+            <div class="form__input-group">
+                <label>Event Description</label>
+                <input type="text-box" name="aboutevent" class="form__input" id="phone" autofocus placeholder="Event Description" required>
+                
+            </div>
+            <div class="form__input-group">
+                <label>Upload Poster</label>
+                <input type="file" name="imageposter" class="form__input" id="reason" accept=".jpg,.jpeg,.png"autofocus placeholder="Event poster" required>
+                
+            </div>
+            <input type="submit" name="submission" class="form__button">
+             
+        <!-- </form> -->
+        </form>
+    </div>
+</body>
+</html>

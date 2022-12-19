@@ -1,11 +1,8 @@
 <?php
-$con=mysqli_connect("localhost","root","");
- if(!$con)
- {
-     die("could not connect ".mysqli_connect_error());
- }
+require('database.php');
+session_start();
+$username=$_SESSION["login_username"];
 
-mysqli_select_db($con,"trefle");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -54,15 +51,30 @@ mysqli_select_db($con,"trefle");
         </p>
              <p>Club has perticipated in various activities in college . We organise torna for any event
                  that needs decor help. we are the backbone of any beautiful Rangoli across college on any eve.</p> </div>
+   <?php
+       $q1="SELECT * from users where USN='$username'";
+       $q2="SELECT * from admin where USN='$username' ";
+       $result1 = mysqli_query($con,$q1);
+       $result2=mysqli_query($con,$q2);
+       $rowcountuser=mysqli_num_rows($result1);
+       $rowcountadmin=mysqli_num_rows($result2);
+       if($rowcountuser!=0){
+    ?>
     <div class="joincontainer">
         <div class=joinnow>Want join this Club to Unlock your creativity</div>
         <button class="joinbutton" onclick="formjoin()">Join Now</button>
     </div>
+    <?php
+       }
+    elseif($rowcountadmin!=0){
+        echo"hello world";
+    }
+ ?>
 </section>
 <script>
       function formjoin()
       {
-        window.location.href ="reg1.html";
+        window.location.href ="regclub.html";
       }
     </script>
 </body>
