@@ -12,28 +12,29 @@
 </head>
 <body>
     <?php
-    require('nav.html');
+    require('nav.html')
     ?>
      <div class="container-fluid club-contain">
       
           <div class="club">
-            <img   class="clubimg"src="images/csi.png" alt="" srcset="" onclick="window.location.href ='csi.php'">
+            <img   class="clubimg"src="images/csi.png" alt="csi" srcset="" onclick="window.location.href ='csi.php'">
+            
           </div>
           <div class="club">
-            <img   class="clubimg"src="images/ace.png" alt="" srcset="" onclick="window.location.href ='ace.php'">
+            <img   class="clubimg"src="images/ace.png" alt="ace" srcset="" onclick="window.location.href ='ace.php'">
           </div>
           <div class="club">
-            <input type="image"  class="clubimg"src="images/flc.png" alt="" srcset="" onclick="window.location.href ='flc.php'">
+            <input type="image"  class="clubimg"src="images/flc.png" alt="flc" srcset="" onclick="window.location.href ='flc.php'">
           </div>
           <div class="club">
-            <input type="image"  class="clubimg"src="images/stereo.png" alt="" srcset="" onclick="window.location.href ='stereo.php'">
+            <input type="image"  class="clubimg"src="images/stereo.png" alt="stereo" srcset="" onclick="window.location.href ='stereo.php'">
           </div>
           <div class="club">
-            <input type="image"  class="clubimg"src="images/kalanjali.png" alt="" srcset="" onclick="window.location.href ='kalanjali.php'">
+            <input type="image"  class="clubimg"src="images/kalanjali.png" alt="kalanjali" srcset="" onclick="window.location.href ='kalanjali.php'">
           </div>
           
           <div class="club">
-            <input type="image"  class="clubimg"src="images/rachana.png" alt="" srcset="" onclick="window.location.href ='rachana.php'">
+            <input type="image"  class="clubimg"src="images/rachana.png" alt="rachna" srcset="" onclick="window.location.href ='rachana.php'">
           </div>
           <!-- <div class="club">
             <input type="image"  class="clubimg"src="images/autocraft.png" alt="" srcset="">

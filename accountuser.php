@@ -6,12 +6,12 @@ if (!isset($_SESSION["login_sess"])) {
     header("location:login.php");
 }
 $email = $_SESSION["login_email"];
-echo "$email";
+//echo "$email";
 $findresult = mysqli_query($trefle, "SELECT * from users where email='$email'");
 if ($res = mysqli_fetch_array($findresult)) {
-    $username = $res['USN'];
+    $username = $res['username'];
     $fname = $res['fname'];
-     $lname = $res['lname'];
+    $lname = $res['lname'];
     $email = $res['email'];
 }
 
@@ -36,7 +36,9 @@ if ($res = mysqli_fetch_array($findresult)) {
                 <div class="account_form">
                     <p>
                         <a href="logout.php"><span style=" color:red; float: right;">Logout
-                            </span></a>
+                            </span></a><br>
+                        <a href="indexuser.php"><span style=" color:red; float: right;">Home
+                            </span></a>    
                     </p>
                     <p>
                         Welcome!  <?php echo $username; ?>

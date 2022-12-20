@@ -103,12 +103,14 @@ $username=$_SESSION["login_username"];
         <h1 style="text-align: center; font-size:3em;">About Us</h1>
         <p> Dance  club of nitte <bold>Kalanjali</bold> is one of very popular club among students.
         </p>
-             <p>Club has perticipated in various activities in college . We organise torna for any event
-                 that needs decor help. we are the backbone of any beautiful Rangoli across college on any eve.</p> </div>
+             <p>Club has perticipated in various activities in college . 
+              We have won various prizes for our college. There are three crew in Kalanjali 
+              that includes all core members <br>TIPTOE<br>RFC<br>MUDRA
+             </p> </div>
     
 
     <?php
-       $q1="SELECT * from users where USN='$username'";
+       $q1="SELECT * from users where username='$username'";
        $q2="SELECT * from admin where USN='$username' ";
        $result1 = mysqli_query($con,$q1);
        $result2=mysqli_query($con,$q2);

@@ -31,7 +31,7 @@ body{
     
     box-shadow: 0 0 10px #df28b4;
     background: rgb(12, 12, 12);
-    /* position: fixed; */
+    position: fixed; 
     left: 0;
     z-index: 100;
 }
@@ -41,6 +41,13 @@ body{
     font-size: 1em;
     justify-content: space-around;
 }
+
+
+
+
+
+
+/*events*/
 .upcoming-event{
     /* background-color: rgb(6, 46, 15); */
     padding-top: 8em; 
@@ -253,6 +260,10 @@ body{
     color: aliceblue;
     font-size: 1em;
 }
+
+
+/*footer*/
+
  footer{
     background-color: rgb(69, 5, 68);
     margin:3em 0 0 0;
@@ -284,6 +295,12 @@ font-size: larger;
     font-size: 1.7em;
     margin:5px 18px 0 0;
     color: aliceblue;
+}
+.copyrt{
+    background-color: rgb(69, 5, 68);
+    text-align: center;
+    color: aliceblue;
+    margin-bottom: 0;
 }
 
 
