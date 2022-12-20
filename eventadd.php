@@ -30,18 +30,18 @@ if(isset($_POST['submission'])){
            
             $query="INSERT INTO events VALUES('$clubname','$eventid','$eventname','$about','$date','$time','$venue','$organizer','$folder')";
             $res=mysqli_query($con,$query);
-            // $createtable='CREATE table .$eventid
-            // (
-            //     ename varchar(20),
-            //     USN varchar(20),
-            //     branch varchar(20),
-            //     sem int(5),
-            //     phone bigint(10),
-            //     primary key(usn)
+            $createtable="CREATE table " .$eventid."
+             (
+                name varchar(20),
+                USN varchar(20),
+                branch varchar(20),
+                sem int(5),
+                phone bigint(10),
+                primary key(usn)
 
-            // )';
-            // $res2=mysqli_query($con);
-            if($res){
+            )";
+            $res2=mysqli_query($con,$createtable);
+            if($res && $res2){
                 echo "<script>
                 alert('Event added Successfully');
                 window.location.href='eventsadmin.php'

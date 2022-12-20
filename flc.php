@@ -1,7 +1,7 @@
 <?php
 session_start();
 $email = $_SESSION["login_email"];
-echo $email;
+
 $con=mysqli_connect("localhost","root","");
  if(!$con)
  {

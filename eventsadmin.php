@@ -62,7 +62,7 @@ require('database.php');
 </head>
 <body>
 <?php
-require('nav.html');
+require('navadmin.html');
 ?>
 <div class="regevents">
     <h1 style="color:white; margin:4rem auto 4rem auto; width:20rem;">Events List</h1>
