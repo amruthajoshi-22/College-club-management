@@ -39,7 +39,7 @@ $username=$_SESSION["login_username"];
     </style>
 <body>
 <?php
-$q1="SELECT * from users where USN='$username'";
+$q1="SELECT * from users where username='$username'";
 $q2="SELECT * from admin where USN='$username' ";
 $result1 = mysqli_query($con,$q1);
 $result2=mysqli_query($con,$q2);
@@ -90,7 +90,7 @@ elseif($rowcountadmin!=0){
              <p>Club has perticipated in various activities in college . We organise torna for any event
                  that needs decor help. we are the backbone of any beautiful Rangoli across college on any eve.</p> </div>
    <?php
-       $q1="SELECT * from users where USN='$username'";
+       $q1="SELECT * from users where username='$username'";
        $q2="SELECT * from admin where USN='$username' ";
        $result1 = mysqli_query($con,$q1);
        $result2=mysqli_query($con,$q2);
