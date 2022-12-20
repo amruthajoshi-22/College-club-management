@@ -31,9 +31,34 @@ The site TREFLE was designed with an idea to have smooth communication between t
         </p>
     </div>
 
-    <footer>
-  <p>Copyright &copy; Devpractical.com</p>
+    
+    <footer class="block">
+  <p class="foot-head" style="margin-top: 2em;">
+    <img src="images/logo.png" alt="logo" srcset=" " style="height:3em; width:3em;" >
+    <span style="font-size:30px; color: aliceblue; font-weight: bold;font-family: 'Lucida Sans', sans-serif;">TREFLE</span>
+  </p>
+
+  <div class="footcontent">
+       <span style="font-size:3em; color:blueviolet">Connect</span>
+       <span>123-456-7890</span>
+       <span style="width: 19em;">NMAM Institute of Technology,<span>
+
+       <span>Nitte,Karkala Taluk,Udupi district</span>
+       <span>treflenitte@gmail.com</span>
+
+       <div class="smedia">
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-square-twitter"></i>
+       </div>
+  </div>
+  
 </footer>
+<div class="copyrt">
+  <p>Copyright &copy; Trefle.com<br>This website is designed by Aditi and Amrutha</p>
+  </div>
+
 
  </body>
     
