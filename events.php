@@ -34,6 +34,7 @@ require("database.php");
      .row1{
       display:flex;
       justify-content:space-evenly;
+      margin:4rem 2rem 4rem 2rem;
      }
 
      .joinbutton{

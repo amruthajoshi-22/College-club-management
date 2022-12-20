@@ -1,0 +1,35 @@
+#navbarNav{
+    margin-left: 25vw;
+}
+
+.navbar-brand{
+    margin-left: 7vw;
+    font-size: 5em;
+    /* height: 1.2em;
+    width: 8rem;  */
+    
+}
+.navbar{
+    /* background-color: rgb(6, 46, 15); */
+    
+    
+    align-items: center;
+    
+    box-shadow: 0 0 10px #e8dee6;
+    background-color: rgb(243, 240, 240);
+   
+    /* position: fixed; */
+    left: 0;
+    z-index: 100;
+}
+
+.nav-item{
+    color:black;
+    margin:0 1em 0 1em;
+    font-size: 1em;
+    justify-content: space-around;
+}
+
+.nav-link{
+    color:black;
+}

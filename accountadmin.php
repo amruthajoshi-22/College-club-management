@@ -5,12 +5,11 @@ if (!isset($_SESSION["login_sess"])) {
     header("location:login.php");
 }
 $email = $_SESSION["login_email"];
-$findresult = mysqli_query($trefle, "SELECT * from users where email='$email'");
+$findresult = mysqli_query($trefle, "SELECT * from admin where email='$email'");
 if ($res = mysqli_fetch_array($findresult)) {
-    $username = $res['username'];
-    $fname = $res['fname'];
-    $lname = $res['lname'];
-    $email = $res['email'];
+    $name = $res['Name'];
+    $usn = $res['USN'];
+    $mail = $res['email'];
 }
 
 ?>
@@ -37,26 +36,23 @@ if ($res = mysqli_fetch_array($findresult)) {
                             </span></a>
                     </p>
                     <p>
-                        Welcome!  <?php echo $username; ?>
+                        Welcome!  <?php echo $name; ?>
                     </p>
 
                     <table class="table">
                             <tr>
-                                <th>First name</th>
-                                <td><?php echo $fname; ?></td>
+                                <th> Name</th>
+                                <td><?php echo $name; ?></td>
                             </tr>
                             
-                            <tr>
-                                <th>Last name</th>
-                                <td><?php echo $lname; ?></td>
-                            </tr>
+                            
                             <tr>
                                 <th>Username</th>
-                                <td><?php echo $username; ?></td>
+                                <td><?php echo $usn; ?></td>
                             </tr>
                             <tr>
                                 <th>Email</th>
-                                <td><?php echo $email; ?></td>
+                                <td><?php echo $mail; ?></td>
                             </tr>
                     </table>
 

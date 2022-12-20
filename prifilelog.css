@@ -1,5 +1,11 @@
 body{
-    background:#EAE9E5;
+    background-image: url('images/loginbackground.png');
+    opacity:0.7;
+    
+     background-image:linear-gradient(to right,rgb(19, 37, 46),rgb(183, 57, 168),url('images/loginbackground.png'));
+    
+    background-size:cover;
+    background-repeat: no-repeat;
 }
 .login_form{
     margin-top:30%;

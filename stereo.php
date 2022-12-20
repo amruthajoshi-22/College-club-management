@@ -1,13 +1,10 @@
-
 <?php
-$con=mysqli_connect("localhost","root","");
- if(!$con)
- {
-     die("could not connect ".mysqli_connect_error());
- }
+require('database.php');
+session_start();
+$username=$_SESSION["login_username"];
 
-mysqli_select_db($con,"trefle");
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +13,25 @@ mysqli_select_db($con,"trefle");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/nontech.css">
+
 </head>
+<style>
+    .studetail{
+        width:60vw;
+        margin:1rem auto 1rem auto;
+        background-color:rgb(121, 160, 193);
+        display:flex;
+        justify-content:space-evenly;
+        border-radius:10px;
+    }
+
+    .memberhead{
+        font-size:3em;
+        color: rgb(121, 160, 193);
+        margin:3rem auto 3rem auto;
+        width:fit-content;
+    }
+    </style>
 <body>
 <div class="head">
 
@@ -56,10 +71,47 @@ mysqli_select_db($con,"trefle");
              <p>Being a part of this club gives you an opportunity to perform in various cultural events taking place in our collge.
                 Once in month we conduct jamming session where you can showcase your talent and have fun.
              </p> </div>
+    
+    <?php
+       $q1="SELECT * from users where USN='$username'";
+       $q2="SELECT * from admin where USN='$username' ";
+       $result1 = mysqli_query($con,$q1);
+       $result2=mysqli_query($con,$q2);
+       $rowcountuser=mysqli_num_rows($result1);
+       $rowcountadmin=mysqli_num_rows($result2);
+       if($rowcountuser!=0){
+    ?>
     <div class="joincontainer">
-        <div class=joinnow>Want to join this Club to Unlock your creativity</div>
+        <div class=joinnow>Want join this Club to Unlock your creativity</div>
         <button class="joinbutton" onclick="formjoin()">Join Now</button>
     </div>
+    <?php
+       }
+    elseif($rowcountadmin!=0){
+        ?>
+        <h1 class="memberhead"> Club Members</h1>
+        <?php
+      $q2="Select * from stereomembers";
+      $result1 = mysqli_query($con,$q2);
+      while($row = mysqli_fetch_array($result1))
+      {
+      $i=1;
+      ?>
+         <div class="studetail"> 
+            <p><?php echo $i++?></p>
+            <p><?php echo $row['name']?></p>
+            <p><?php echo $row['USN']?></p>
+            <p><?php echo $row['phone']?></p>
+            
+      </div>  
+     <?php
+      }
+      }
+
+
+    ?>
+    
+ 
 </section>
 <script>
       function formjoin()

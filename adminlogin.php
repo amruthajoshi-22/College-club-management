@@ -42,6 +42,7 @@ if(isset($_POST['submit'])) {
             <?php
 			 
 			 $row=mysqli_fetch_array($result);
+             $_SESSION["login_sess"] = "1";
              $_SESSION['logged']=$row['email'];
 			 $_SESSION['name']=$row[0];
 			 $_SESSION['login_username']=$row['USN'];
@@ -63,6 +64,14 @@ if(isset($_POST['submit'])) {
     <link rel="stylesheet" href="css/reg.css">
     <script src="js/formvalidate.js"></script>
 </head>
+<style>
+    body{
+   background-image:url('images/loginbackground.png');
+   background-repeat:norepeat;
+    background-size:cover;
+    }
+</style>
+
 <body>
     <div class="container">
         <form class="form" id="login" action="adminlogin.php"  method="POST" >
@@ -77,9 +86,7 @@ if(isset($_POST['submit'])) {
                 <div class="form__input-error-message"></div>
             </div>
             <input class="form__button" type="submit" name="submit">
-            <p class="form__text">
-                <a href="#" class="form__link">Forgot your password?</a>
-            </p>
+            
 
              <p class="form__text">
                 <a class="form__link" href="login.php" id="linkCreateAccount">User login</a>

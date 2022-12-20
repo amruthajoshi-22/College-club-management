@@ -20,19 +20,25 @@
          {
             case "Kalanjali":
             case "kalanjali": $table="kalanjalimembers";
+                              $club="kalanjali.php";
                               break;
             case "Stereo":
             case "stereo": $table="stereomembers";
+                           $club="stereo.php";
                             break;
             case "Rachana":
             case "rachana": $table="rachnamembers";
+                            $club="rachana.php";
                             break;
          }
         $sql="INSERT INTO $table ( `name`, `USN`, `branch`, `sem`, `mail`, `phone`, `reason`) VALUES ( '$name', '$usn', '$branch', '$sem', '$mail', '$phone', '$reason');";
         
 
         if($con->query($sql)==true){
-            echo "Successfully inserted";
+            echo "<script>
+                alert('Event registration Successful');
+                window.location.href='$club';
+                </script>";
         }
 
         else{

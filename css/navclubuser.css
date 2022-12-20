@@ -1,0 +1,24 @@
+.brandimg{
+    margin-left:5rem;
+}
+.brand{
+    padding: 1rem 0 0 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.lnitems{
+    width:60vw;
+    display: flex;
+    margin-left:32rem;
+
+}
+.lnitems li{
+    width:5rem;
+    padding:1rem;
+    list-style: none;
+}
+.lnitems li a{
+    color:rgb(50, 72, 99);
+    font-size:20px;
+    text-decoration: none;
+}
