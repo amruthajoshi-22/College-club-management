@@ -1,7 +1,8 @@
 <?php
 session_start();
 $email = $_SESSION["login_email"];
-echo $email;
+$username=$_SESSION["login_username"];
+
 $con=mysqli_connect("localhost","root","");
  if(!$con)
  {
@@ -17,6 +18,7 @@ mysqli_select_db($con,"trefle");
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/eachclub.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="css/navclubuser.css">
     <title>Ace</title>
     <style>
     .joincontainer{
@@ -47,7 +49,20 @@ mysqli_select_db($con,"trefle");
 </style>
 </head>
 <body>
-
+<?php
+$q1="SELECT * from users where USN='$username'";
+$q2="SELECT * from admin where USN='$username' ";
+$result1 = mysqli_query($con,$q1);
+$result2=mysqli_query($con,$q2);
+$rowcountuser=mysqli_num_rows($result1);
+$rowcountadmin=mysqli_num_rows($result2);
+if($rowcountuser!=0){
+include('navclubuser.html');
+}
+elseif($rowcountadmin!=0){
+    include('navclubadmin.html');
+}
+?>
     <h1 style="text-align:center; font-size:50px; ">
         Finite Loop club;
     </h1>

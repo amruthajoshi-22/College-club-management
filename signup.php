@@ -78,7 +78,9 @@
           $error[] = 'password : max length 20 allowed';
         }
 
+
         $sql = " select * from users where (username ='$username' or email='email')";
+
         $res = mysqli_query($trefle, $sql);
         if(mysqli_num_rows($res)>0)
         {
