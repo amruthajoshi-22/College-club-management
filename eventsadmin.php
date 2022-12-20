@@ -17,6 +17,7 @@ require('database.php');
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="css/home.css">
+    <!-- <link rel="stylesheet" href="css/nav.css"> -->
  <style>
     
     .eventshead{
@@ -45,17 +46,20 @@ require('database.php');
     .studetail{
         height:5vh;
         width:60vw;
+        background-image:linear-gradient(to right,rgb(38 9 38),rgb(82 16 79));
         margin:3rem auto 0 auto; 
         display:flex;
         justify-content:space-evenly;
         color:white;
+        border-radius:10px;
         /* display:none; */
     }
 
     .eventbutton{
-        display:flex;
-        justify-content:center;
-        margin-top:2rem;
+        width:fit-content;
+        color:white;
+        font-size:45px;
+        margin:3rem auto 1rem auto;
     }
     
     </style>
@@ -65,7 +69,7 @@ require('database.php');
 require('navadmin.html');
 ?>
 <div class="regevents">
-    <h1 style="color:white; margin:4rem auto 4rem auto; width:20rem;">Events List</h1>
+    <p style="color:white; margin:4rem auto 4rem auto; width:fit-content; font-size:50px; font-style:Geneva;">Events List</p>
 
         <div class="eachrow eventshead">
             <p class="eachentry" style="width:6vw;">S.no</p>
@@ -103,7 +107,7 @@ require('navadmin.html');
 </div>
 
 <div class="registerstu">
-      <h1 style="color:white; margin:4rem auto 4rem auto; width:35rem;">Registered students for events</h1>
+      <p style="color:white; margin:2rem auto 4rem auto; width:42rem; font-size:50px;">Registered students for events</p>
 <?php
       $q2="Select eventid, ename from events";
       $result1 = mysqli_query($con,$q1);
@@ -113,7 +117,8 @@ require('navadmin.html');
           $temp2=$row['ename'];
           ?>
           <div class="eventbutton">
-          <button type="button" class="btn btn-primary eventbutton" onclick="showstudents(this);"><?php echo $temp2 ?></button>
+              <?php echo $temp2 ?>
+          <!-- <button type="button" class="btn btn-primary eventbutton" onclick="showstudents(this);"></button> -->
          </div>
           <?php
          $q3="Select * from $temp1";

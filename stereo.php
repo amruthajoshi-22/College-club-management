@@ -13,6 +13,7 @@ $username=$_SESSION["login_username"];
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/nontech.css">
+    <link rel="stylesheet" href="css/navclubuser.css">
 
 </head>
 <style>
@@ -33,6 +34,20 @@ $username=$_SESSION["login_username"];
     }
     </style>
 <body>
+<?php
+$q1="SELECT * from users where USN='$username'";
+$q2="SELECT * from admin where USN='$username' ";
+$result1 = mysqli_query($con,$q1);
+$result2=mysqli_query($con,$q2);
+$rowcountuser=mysqli_num_rows($result1);
+$rowcountadmin=mysqli_num_rows($result2);
+if($rowcountuser!=0){
+include('navclubuser.html');
+}
+elseif($rowcountadmin!=0){
+    include('navclubadmin.html');
+}
+?>
 <div class="head">
 
 <div class="heading" >

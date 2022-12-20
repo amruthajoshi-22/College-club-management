@@ -10,13 +10,13 @@
     
 }
 .navbar{
-    /* background-color: rgb(6, 46, 15); */
+    background-color: rgb(10, 17, 12);
     
     
     align-items: center;
     
-    box-shadow: 0 0 10px #e8dee6;
-    background-color: rgb(243, 240, 240);
+    box-shadow: 0 0 10px #724d6b;
+    /* background-color: rgb(243, 240, 240); */
    
     /* position: fixed; */
     left: 0;
