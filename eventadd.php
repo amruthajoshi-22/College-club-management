@@ -6,7 +6,7 @@ if(isset($_POST['submission'])){
         'Image does not exist';
     }
     else{
-        echo "Hello world";
+        //echo "Hello world";
         
         $fileName=$_FILES["imageposter"]["name"];
         // $fileSize=$_FILES["image"]["size"];

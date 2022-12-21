@@ -52,7 +52,7 @@
         {
           $error[] = 'user name : max length 50 characters';
         }
-        if (!preg_match("/^^[^0-9][a-z0-9]+([_-]?[a-z0-9])*$/",$username))
+        if (!preg_match("/^^[4NM]+[4nm][a-z0-9]+([_-]?[a-z0-9])*$/",$username))
         {
             $error[]='invalid user name, Enter lowercase user name with no 
             numerical at start  eg- newusername or mysuder123';
@@ -78,7 +78,9 @@
           $error[] = 'password : max length 20 allowed';
         }
 
-        $sql = " select * from users where (USN ='$username' or email='$email')";
+
+        $sql = " select * from users where (username ='$username' or email='email')";
+
         $res = mysqli_query($trefle, $sql);
         if(mysqli_num_rows($res)>0)
         {
@@ -135,28 +137,28 @@
               <label class="label_txt">First Name</label>
               <input type="text" class="form-control" name="fname" value="<?php
               if (isset($error)) 
-              {echo '$fname';} ?>" required="">
+              {echo $fname;} ?>" required="">
             </div>
 
             <div class="form-group">
               <label class="label_txt">Last Name</label>
               <input type="text" class="form-control" name="lname" value="<?php
               if (isset($error)) 
-              {echo '$lname';} ?>" required="">
+              {echo $lname;} ?>" required="">
             </div>
 
             <div class="form-group">
               <label class="label_txt">Username</label>
               <input type="text" class="form-control" name="username" value="<?php
               if (isset($error)) 
-              {echo '$username';} ?>" required="">
+              {echo $username;} ?>" required="">
             </div>
 
             <div class="form-group">
               <label class="label_txt">Email</label>
               <input type="email" class="form-control" name="email" value="<?php
               if (isset($error)) 
-              {echo ' $email';} ?>" required>
+              {echo $email;} ?>" required>
             </div>
 
             <div class="form-group">

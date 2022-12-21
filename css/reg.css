@@ -13,8 +13,8 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 18px;
-    /* background-image: url("https://wallpaperaccess.com/full/16692.jpg"); */
-    background-image:linear-gradient(to right,rgb(99, 166, 197),rgb(162, 195, 211));
+     /*background-image: url("https://wallpaperaccess.com/full/16692.jpg"); */
+    background-color:rgb(225, 222, 181);
     background-size: cover;
 }
 
@@ -89,7 +89,6 @@ body {
     color: var(--color-error);
     border-color: var(--color-error);
 }
-
 .form__input-error-message {
     margin-top: 0.5rem;
     font-size: 0.85rem;

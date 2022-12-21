@@ -50,7 +50,7 @@ mysqli_select_db($con,"trefle");
 </head>
 <body>
 <?php
-$q1="SELECT * from users where USN='$username'";
+$q1="SELECT * from users where username='$username'";
 $q2="SELECT * from admin where USN='$username' ";
 $result1 = mysqli_query($con,$q1);
 $result2=mysqli_query($con,$q2);
@@ -64,7 +64,9 @@ elseif($rowcountadmin!=0){
 }
 ?>
     <h1 style="text-align:center; font-size:50px; ">
-        Finite Loop club;
+    <a href="clubsuser.php"><span style=" color:white; float: left;"><<
+                </span></a>
+        Finite Loop Club;
     </h1>
   <div class="about">
     <div class="clubimg"><img src="images/flc.png" alt="" srcset="" style=" width:15rem; height:15rem"></div>

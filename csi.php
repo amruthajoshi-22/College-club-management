@@ -24,7 +24,7 @@ mysqli_select_db($con,"trefle");
 </head>
 <body>
 <?php
-$q1="SELECT * from users where USN='$username'";
+$q1="SELECT * from users where username='$username'";
 $q2="SELECT * from admin where USN='$username' ";
 $result1 = mysqli_query($con,$q1);
 $result2=mysqli_query($con,$q2);
@@ -39,6 +39,8 @@ elseif($rowcountadmin!=0){
 ?>
      <!-- <button type="button" class="btn btn-light back" onclick="back()">Back</button> -->
     <h1 style="text-align:center; font-size:50px; ">
+    <a href="clubsuser.php"><span style=" color:white; float: left;"><<
+                </span></a>
         Computer Society Of India
     </h1>
   <div class="about">

@@ -1,7 +1,17 @@
 body{
-    background-image: url(../images/background.png);
+    /* background-color: black;  */
+    background-image: url("../images/background.png");
+    
+    margin: 0;
+    padding: 0;
 }
- 
+
+.block{
+    margin-top: 5sm;
+    margin-left: 0;
+}
+    /* color: aliceblue; */
+
 #navbarNav{
     margin-left: 25vw;
 }
@@ -14,36 +24,52 @@ body{
     
 }
 .navbar{
-    background-color: rgb(6, 46, 15);
-    padding:1.5em 0 1em 0;
+    /* background-color: rgb(6, 46, 15); */
     
+    
+    align-items: center;
+    
+    box-shadow: 0 0 10px #df28b4;
+    background: rgb(12, 12, 12);
+    position: fixed; 
+    left: 0;
+    z-index: 100;
 }
 
 .nav-item{
     margin:0 1em 0 1em;
-    font-size: 20px;
+    font-size: 1em;
+    justify-content: space-around;
 }
 
-.club-contain{
+/*club content*/
+
+.club-contain {
     width: fit-content;
-    margin-top: 10vh;
+   /* margin-top: 15vh;*/
     display: grid;
     grid-template-columns: auto auto auto;
     column-gap: 10vw;
-    row-gap: 2em;
+    row-gap: 10em;
 }
-.club{
+.club {
     height:20rem;
     width:20rem;
     margin-right:0;
+    margin-top:10em;
+    
+    
 }
+
+
 /* .club img:hover{
      height:38vh; 
     width:25vw 
 } */
 
-.clubimg{
+.clubimg {
     height:20rem;
     width:20rem;
     border-radius: 50%;
+   
 }
