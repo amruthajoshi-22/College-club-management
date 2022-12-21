@@ -57,7 +57,10 @@ elseif($rowcountadmin!=0){
 <div class="head">
 
 <div class="heading" >
-    <h1 style="text-align:center; color:rgb(50, 72, 99); font-size:4em;">Kalanjali<br>Let the music take you away.</h1>>
+    <h1 style="text-align:center; color:rgb(50, 72, 99); font-size:4em;">
+    <a href="clubsuser.php"><span style=" color:white; float: left;"><<
+                </span></a>
+    Kalanjali<br>Let the Dance take your breath away.</h1>>
 </div>
 <p style="text-align:center; color:rgb(138, 144, 194); font-size:4em;"> Club Core Members</p>
 

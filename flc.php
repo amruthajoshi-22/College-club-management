@@ -64,7 +64,9 @@ elseif($rowcountadmin!=0){
 }
 ?>
     <h1 style="text-align:center; font-size:50px; ">
-        Finite Loop club;
+    <a href="clubsuser.php"><span style=" color:white; float: left;"><<
+                </span></a>
+        Finite Loop Club;
     </h1>
   <div class="about">
     <div class="clubimg"><img src="images/flc.png" alt="" srcset="" style=" width:15rem; height:15rem"></div>

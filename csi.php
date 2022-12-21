@@ -39,6 +39,8 @@ elseif($rowcountadmin!=0){
 ?>
      <!-- <button type="button" class="btn btn-light back" onclick="back()">Back</button> -->
     <h1 style="text-align:center; font-size:50px; ">
+    <a href="clubsuser.php"><span style=" color:white; float: left;"><<
+                </span></a>
         Computer Society Of India
     </h1>
   <div class="about">

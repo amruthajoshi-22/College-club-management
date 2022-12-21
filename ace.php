@@ -35,7 +35,8 @@ elseif($rowcountadmin!=0){
 }
 ?>
     <h1 style="text-align:center; font-size:50px; ">
-        Association Of Computer Engineers
+    <a href="clubsuser.php"><span style=" color:white; float: left;"><<
+                </span></a>Association Of Computer Engineers
     </h1>
   <div class="about">
     <div class="clubimg"><img src="images/ace.png" alt="" srcset="" style=" width:15rem; height:15rem"></div>
@@ -43,7 +44,9 @@ elseif($rowcountadmin!=0){
     <h2>About Us</h2>
     
     <p style="width:30rem; font-size:23px;">
-  Ace Stands for Association of Computer Engineers.It is a Branch association club of CSE Department.HOD of CSE is Dr Jyothi Shetty.Faculty Coordinator for the year 2022-2023 is Dr Pradeep Kanchan, MS Keerthana B,Mr Ashwin Shenoy.</p>
+  Ace Stands for Association of Computer Engineers.It is a Branch association club of CSE Department.
+  HOD of CSE is Dr Jyothi Shetty.Faculty Coordinator for the year 2022-2023 is Dr Pradeep Kanchan, 
+  MS Keerthana B,Mr Ashwin Shenoy.</p>
     </div>
     </div>
 

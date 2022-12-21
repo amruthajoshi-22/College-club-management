@@ -28,7 +28,9 @@ if(isset($_POST['submission'])){
 }
 
 else{
-    alert("Registration Unsuccessful");
+    echo "<script>
+    alert('Registration Unsuccessful');
+    </script>";
 }
-        ?>
+?>
     
