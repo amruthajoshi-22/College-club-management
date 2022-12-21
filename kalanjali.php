@@ -57,7 +57,7 @@ elseif($rowcountadmin!=0){
 <div class="head">
 
 <div class="heading" >
-    <h1 style="text-align:center; color:rgb(50, 72, 99); font-size:4em;">Kalanjali<br>Let the music take you away.</h1>>
+    <h1 style="text-align:center; color:rgb(50, 72, 99); font-size:4em;">Kalanjali<br>Let the Dance take your breath away.</h1>>
 </div>
 <p style="text-align:center; color:rgb(138, 144, 194); font-size:4em;"> Club Core Members</p>
 
@@ -89,8 +89,12 @@ elseif($rowcountadmin!=0){
         <h1 style="text-align: center; font-size:3em;">About Us</h1>
         <p> Dance  club of nitte <bold>Kalanjali</bold> is one of very popular club among students.
         </p>
-             <p>Club has perticipated in various activities in college . We organise torna for any event
-                 that needs decor help. we are the backbone of any beautiful Rangoli across college on any eve.</p> </div>
+             <p>Dance club of nitte Kalanjali is one of very popular club among students.
+
+Club has perticipated in various activities in college . We have won various prizes for our college. There are three crew in Kalanjali that includes all core members
+TIPTOE
+RFC
+MUDRA</p> </div>
     
 
     <?php

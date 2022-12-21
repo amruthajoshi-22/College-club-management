@@ -168,8 +168,14 @@
         <i class="fa-brands fa-square-twitter"></i>
        </div>
   </div>
+
+
+  
 </footer>
 
+<div class="copyrt">
+  <p>Copyright &copy; Trefle.com<br>This website is designed by Aditi and Amrutha</p>
+  </div>
 
 </body>
 </html>

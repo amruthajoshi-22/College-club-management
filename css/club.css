@@ -2,15 +2,14 @@ body{
     background-image: url(../images/background.png);
 }
  
-#navbarNav{
+ /* #navbarNav{
     margin-left: 25vw;
 }
 
 .navbar-brand{
     margin-left: 7vw;
     font-size: 5em;
-    /* height: 1.2em;
-    width: 8rem;  */
+    
     
 }
 .navbar{
@@ -22,20 +21,23 @@ body{
 .nav-item{
     margin:0 1em 0 1em;
     font-size: 20px;
-}
+}  */
 
 .club-contain{
     width: fit-content;
-    margin-top: 10vh;
+    
+    margin-top: 15vh;
     display: grid;
     grid-template-columns: auto auto auto;
     column-gap: 10vw;
-    row-gap: 2em;
+    row-gap: 10em;
 }
 .club{
+    
     height:20rem;
     width:20rem;
     margin-right:0;
+    transition: .5s ease;
 }
 /* .club img:hover{
      height:38vh; 

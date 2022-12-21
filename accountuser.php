@@ -36,6 +36,8 @@ if ($res = mysqli_fetch_array($findresult)) {
                 <div class="account_form">
                     <p>
                         <a href="logout.php"><span style=" color:red; float: right;">Logout
+                            </span></a><br>
+                            <a href="indexuser.php"><span style=" color:red; float: right;">Home
                             </span></a>
                     </p>
                     <p>

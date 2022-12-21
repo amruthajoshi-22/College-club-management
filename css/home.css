@@ -285,5 +285,11 @@ font-size: larger;
     margin:5px 18px 0 0;
     color: aliceblue;
 }
+.copyrt{
+    background-color: rgb(69, 5, 68);
+    text-align: center;
+    color: aliceblue;
+    margin-bottom: 0;
+}
 
 
